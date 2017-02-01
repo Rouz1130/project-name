@@ -1,7 +1,7 @@
 {
-  "name": "component-library",
+  "name": "project-name",
   "version": "0.0.0",
-  "description": "Vendnovation component-library intern",
+  "description": "Vendnovation project-name intern",
   "private": true,
   "directories": {
     "doc": "doc",
@@ -65,5 +65,8 @@
   },
   "engines": {
     "node": ">= 0.12.0"
+  },
+  "dependencies": {
+    "glyphicons": "^0.2.0"
   }
 }

@@ -19,10 +19,10 @@ module.exports = function(environment) {
 
 
     firebase: {
-    apiKey: "AIzaSyCHe51fxtmY0KpHQ2Jr3YDByayUc-9m_lM",
-    authDomain: "project-name-809e8.firebaseapp.com",
-    databaseURL: "https://project-name-809e8.firebaseio.com",
-    storageBucket: "project-name-809e8.appspot.com"
+      apiKey: "AIzaSyCHe51fxtmY0KpHQ2Jr3YDByayUc-9m_lM",
+     authDomain: "project-name-809e8.firebaseapp.com",
+     databaseURL: "https://project-name-809e8.firebaseio.com",
+     storageBucket: "project-name-809e8.appspot.com"
   },
 
   APP: {
