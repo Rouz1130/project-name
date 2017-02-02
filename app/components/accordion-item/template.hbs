@@ -1,5 +1,30 @@
-<div class="product-info-container"
+<!-- <div class="product-info-container"
  {{action headerClicked}}>{{item.title}} (click to {{if isExpanded 'close' 'open'}})</div>
 {{#if isExpanded}}
   <div class='details'>{{item.details}}</div>
-{{/if}}
+{{/if}} -->
+
+
+<div class="col-md-6 col-md-offset-3">
+       <div class="card">
+         <div class="card-content">
+           <div class="card-title"
+           {{action headerClicked}}>{{item.title}} {{if isExpanded '' '' }}</div>
+
+
+             <!-- <a data-toggle="collapse" data-parent="#faq" href="#answerOne" aria-expanded="false" aria-controls="answerOne">
+               <h4>Controller Actions:</h4>
+             </a> -->
+
+         </div>
+         {{#if isExpanded}}
+           <div class='card-block'>{{item.details}}</div>
+         {{/if}}
+         <!-- <div id="answerOne" class="collapse" role="tabcard" aria-labelledby="questionOne"> -->
+           <!-- <div class="card-block"> -->
+             <!-- <p>Descriptions and specs on Controller Actions</p> -->
+           <!-- </div> -->
+         <!-- </div> -->
+       </div>
+
+   </div>
