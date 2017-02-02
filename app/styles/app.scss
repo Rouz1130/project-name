@@ -87,30 +87,6 @@ $no-image-font-size: $image-width;
 
 }
 
-//If we decide to add image in component-documentation box code commented out below.
-
-// .card .card-image {
-//   position: relative;
-//   overflow: hidden;
-// }
-//
-//
-//
-//
-//
-// one we add an image this code bleow
-// .card .card-image img {
-//   border-radius: 2px 2px 0 0;
-//   background-clip: padding-box;
-//   position: relative;
-//   z-index: -1;
-// }
-// .card .card-image span.card-title {
-//   position: absolute;
-//   bottom: 0;
-//   left: 0;
-//   padding: 16px;
-// }
 .card .card-content {
   padding: 16px;
   border-radius: 0 0 2px 2px;
@@ -324,13 +300,32 @@ body {
 }
 
 
+
+//
 body {
-  margin: 0px;
-  padding: 0px;
+  margin: 12px 16px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 12pt;
 }
 
-.nh2 {
-font-family: 'Lobster';
-font-size: 35px;
-color: #a0acb5;
+.header {
+  background: #eee;
+  padding: 5px;
+
 }
+
+.details {
+  padding: 10px 10px 20px 10px;
+}
+
+
+// body {
+//   margin: 0px;
+//   padding: 0px;
+// }
+//
+// .nh2 {
+// font-family: 'Lobster';
+// font-size: 35px;
+// color: #a0acb5;
+// }
