@@ -1,5 +1,16 @@
 {{product-card click=(action 'onclick') product=model}}
  <br>
  <br>
- <h3>Documentation</h3>
-{{accordion-list items=items}}
+
+{{#contextual-accordion items=products as |item a|}}
+  {{#a.header}}
+    {{item.title}} (click to {{if a.isExpanded 'close' 'read'}})
+  {{/a.header}}
+
+  {{#a.details}}
+    <h4>By {{item.author}} </h4>
+    <p>
+      {{item.text}}
+    </p>
+  {{/a.details}}
+{{/contextual-accordion}}
