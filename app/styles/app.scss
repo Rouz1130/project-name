@@ -1,147 +1,7 @@
 @import "pods";
 @import "ember-bootstrap/bootstrap";
 @charset "utf-8";
-// @import "ember-bootstrap/bootstrap";
-// @charset "utf-8";
-// @import url(https://fonts.googleapis.com/css?family=Lobster);
-// @import url(https://fonts.googleapis.com/css?family=Passion+One);
-
-// @import "app/styles/app.css";
-/*@import "app/styles/app.scss";*/
-// @import "ember-bootstrap/bootstrap";
-// @charset "utf-8";
-// @import url(https://fonts.googleapis.com/css?family=Lobster);
-// @import url(https://fonts.googleapis.com/css?family=Passion+One);
-// app/styles/app.css|less|scss
-//
-// @charset "utf-8";
-// @import url(https://fonts.googleapis.com/css?family=Lobster);
-// @import url(https://fonts.googleapis.com/css?family=Passion+One);
-//
-// $product-card-height: 102px;
-// $card-element-margin: 5px;
-// $card-element-height: $product-card-height - (2 * $card-element-margin);
-// $image-width: 110px;
-// $no-image-font-size: $image-width;
-//
-// .product-card {
-//     width: 48%;
-//     height: $product-card-height;
-//     display:inline-block;
-//     margin: 5px;
-//     border: 1px solid #CCC;
-//     box-shadow: 0 0 3px #ccc;
-// }
-//
-// .product-card:hover {
-//     height: $product-card-height;
-//     border: 1px solid #AAA;
-//     box-shadow: 0 0 25px #AAA;
-//     cursor: pointer;
-// }
-//
-// .product-card__image-container, .product-card__product-info-container {
-//     height: $card-element-height;
-//     font-size: 23px;
-//     text-align: left;
-//     font-family:serif;
-//     font-style: normal;
-//     font-weight: 300;
-// }
-//
-// .product-card__image-container {
-//     text-align: center;
-//     margin: $card-element-margin;
-//     display: inline-block;
-//     width: $image-width;
-//     max-height: 51px;
-// }
-// .product-card__image-container--no-image{
-//     line-height: calc(#{$image-width} - (#{$card-element-margin} + 2px));
-//     font-size: $no-image-font-size;
-// }
-// .product-card__product-info-container {
-//     width: calc(100% - (#{$image-width} + (3 * #{$card-element-margin}));
-//     overflow-y: hidden;
-//     display: inline-block;
-//     margin: $card-element-margin $card-element-margin $card-element-margin 0;
-//     float: right;
-// }
-//
-// .product-card__image-container > img {
-//     margin: auto;
-//     display: block;
-//     height: auto;
-//     width: auto;
-//     max-height: calc(#{$image-width});
-//     max-width: $image-width;
-// }
-
-// start of component-documentation box/card
-//
-// .card {
-//   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-// }
-//
-//
-// .card {
-//   margin-top: 10px;
-//   box-sizing: border-box;
-//   border-radius: 2px;
-//   background-clip: padding-box;
-// }
-//
-// .card h5.card-title {
-//     color: #2a2a2a;
-//     font-size: 24px;
-//     font-family: inherit;
-//     font-weight: 300;
-//     text-transform: uppercase;
-//     text-align: left;
-//
-// }
-//
-// .card .card-content {
-//   padding: 16px;
-//   border-radius: 0 0 2px 2px;
-//   background-clip: padding-box;
-//   box-sizing: border-box;
-// }
-// .card .card-content p {
-//   margin: 0;
-//   color: inherit;
-//   text-align: justify;
-// }
-// .card .card-content h3 {
-//   margin: 0;
-//   color: inherit;
-//   text-align:justify;
-// }
-// .card .card-content span.card-title {
-//   line-height: 48px;
-// }
-// .card .card-action {
-//   border-top: 1px solid rgba(160, 160, 160, 0.2);
-//   padding: 16px;
-// }
-// .card .card-action a {
-//   color: #ffab40;
-//   margin-right: 16px;
-//   transition: color 0.3s ease;
-//   text-transform: uppercase;
-// }
-// .card .card-action a:hover {
-//   color: #ffd8a6;
-//   text-decoration: none;
-// }
-
-
-// app/styles/app.scss
-
-/*
- * Base structure
- */
-
+// @import url(http://weloveiconfonts.com/api/?family=entypo|fontawesome);
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
   padding-top: 50px;
@@ -199,7 +59,7 @@ body {
    margin: 0px;
    line-height: 35px;
    cursor: pointer;
-   /*
+
      .collapsed{
         .arrow:before{
                   font-family: FontAwesome;
@@ -211,7 +71,7 @@ body {
                   float:right;
              }
       }
- */
+
  }
  .nav-side-menu ul :not(collapsed) .arrow:before,
  .nav-side-menu li :not(collapsed) .arrow:before {
@@ -317,32 +177,141 @@ body {
  }
 
 
+// component accordion so far would not work to style in own pod folder
 
-//
-// body {
-//   margin: 12px 16px;
+$header-height: 102px;
+$details-element-margin: 5px;
+$details-element-height: $header-height - (2 * $details-element-margin);
+
+$no-image-font-size: $image-width;
+
+.header   {
+    width: 48%;
+    height: $header-height;
+    display:inline-block;
+    margin: 5px;
+    border: 1px solid #CCC;
+    box-shadow: 0 0 3px #ccc;
+}
+
+.header:hover {
+    height: $header-height;
+    border: 1px solid #AAA;
+    box-shadow: 0 0 25px #AAA;
+    cursor: pointer;
+}
+
+.header__image-container, .head  __product-info-container {
+    height: $details-element-height;
+    font-size: 23px;
+    text-align: left;
+    font-family:serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.header__image-container {
+    text-align: center;
+    margin: $details-element-margin;
+    display: inline-block;
+    width: $image-width;
+    max-height: 51px;
+}
+.header__image-container--no-image{
+    line-height: calc(#{$image-width} - (#{$details-element-margin} + 2px));
+    font-size: $no-image-font-size;
+}
+.header__product-info-container {
+    width: calc(100% - (#{$image-width} + (3 * #{$details-element-margin}));
+    overflow-y: hidden;
+    display: inline-block;
+    margin: $details-element-margin $details-element-margin $details-element-margin 0;
+    float: right;
+}
+
+.header__image-container > img {
+    margin: auto;
+    display: block;
+    height: auto;
+    width: auto;
+    max-height: calc(#{$image-width});
+    max-width: $image-width;
+}
+
+// start of component-documentation box/details
+
+.card {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+
+.card {
+  margin-top: 10px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  background-clip: padding-box;
+}
+
+.card h5.card-title {
+    color: #2a2a2a;
+    font-size: 24px;
+    font-family: inherit;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: left;
+
+}
+
+.card .card-content {
+  padding: 16px;
+  border-radius: 0 0 2px 2px;
+  background-clip: padding-box;
+  box-sizing: border-box;
+}
+.card .card-content p {
+  margin: 0;
+  color: inherit;
+  text-align: justify;
+}
+.card .card-content h3 {
+  margin: 0;
+  color: inherit;
+  text-align:justify;
+}
+.card .card-content span.card-title {
+  line-height: 48px;
+}
+.card .card-action {
+  border-top: 1px solid rgba(160, 160, 160, 0.2);
+  padding: 16px;
+}
+.card .card-action a {
+  color: #ffab40;
+  margin-right: 16px;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+}
+.card .card-action a:hover {
+  color: #ffd8a6;
+  text-decoration: none;
+}
+
+
+// .body {
+//   margin: 6px 12px;
 //   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-//   font-size: 12pt;
+//   font-size: 18pt;
+//
 // }
 //
 // .header {
 //   background: #eee;
-//   padding: 10px;
+//   padding: 30px;
+//   font-size: 15px;
+//   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 // }
 //
 // .details {
-//   padding: 10px 10px 20px 10px;
-// }
-
-
-
-// body {
-//   margin: 0px;
-//   padding: 0px;
-// }
-//
-// .nh2 {
-// font-family: 'Lobster';
-// font-size: 35px;
-// color: #a0acb5;
+//   font-size: 20px;
+//   padding: 10 10  20 10
 // }

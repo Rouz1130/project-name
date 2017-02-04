@@ -6,35 +6,27 @@ export default Ember.Controller.extend({
       window.alert('cardWasClicked');
     }
   },
-  // items: Ember.computed(function() {
-  //   return [
-  //     {title: "Actions:", details: "code-snippet"},
-  //     {title: "Item 2", details: "Details here"},
-  //     {title: "Item 3", details: "Details here"}
-  //   ];
-  // })
 
-  // take out computed function
   products: [
     {
       title: "Controller Actions",
-      name: "Chris",
+      author: "Chris",
       text: "Services, their whys, their hows."
     },
     {
       title: "Controller Fields",
       text: "Routing and routes and such.",
-      name: "Steve"
+      author: "Steve"
     },
     {
       title: "Required Parameters",
       text: "Templates and helpers and mustaches oh my.",
-      name: "Larry"
+      author: "Larry"
     },
     {
       title: "Optional Parameters",
       text: "Templates and helpers and mustaches oh my.",
-      name: "Tyler"
+      author: "Tyler"
     }
   ]
 });
