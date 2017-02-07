@@ -1,9 +1,12 @@
-
+<div class="header">
 {{#each items as |listItem|}}
   {{#accordion-item item=listItem activeItem=activeItem as |isExpanded| }}
+  <div class="details">
   {{yield listItem
           (hash isExpanded=isExpanded
                 header=(component 'accordion-header' click=(action "toggleActiveItem" listItem))
                 details=(component 'accordion-details' isExpanded=isExpanded))}}
+  </div>              
   {{/accordion-item}}
 {{/each}}
+</div>

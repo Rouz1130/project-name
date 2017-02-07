@@ -1,0 +1,59 @@
+$inDex-blue: #1B77B8; // inDEX logo blue ('<' and '>' )
+$inDex-green: #4AB253; // inDEX logo green ('i')
+$inDex-red: red;
+.loading-feedback__icon--ok {
+    color: $inDex-green;
+}
+
+.loading-feedback__icon--error {
+    color: $inDex-red;
+}
+
+$loadingIconSize: 1em;
+$dashArray: 250;
+.loading-feedback {
+    line-height: $loadingIconSize;
+}
+
+.loading-feedback__spinner {
+    width: $loadingIconSize;
+    animation: loading 3s linear infinite;
+    .loading-feedback__spinner--circle {
+        stroke: {
+            dashoffset: 0;
+            dasharray: $dashArray;
+            width: 40;
+            miterlimit: 10;
+            linecap: round;
+        }
+        animation: loading-circle 2s linear infinite;
+        stroke: $inDex-blue;
+        fill: transparent;
+    }
+}
+
+.loading-feedback__message {
+    line-height: 1em;
+}
+
+.loading-feedback--complete > span {
+    font-size: $loadingIconSize;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loading-circle {
+    0% {
+        stroke-dashoffset: 0
+    }
+    100% {
+        stroke-dashoffset: -$dashArray * 2;
+    }
+}

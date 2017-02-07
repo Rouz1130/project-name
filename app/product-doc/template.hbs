@@ -10,9 +10,13 @@
 {{item.title}}{{if a.isExpanded '' ''}}
 {{/a.header}}
 {{#a.details}}
-<h4>By {{item.author}} </h4>
-<p>
+<h4>By:{{item.author}}</h4>
+<h4>
   {{item.text}}
-</p>
+</h4>
 {{/a.details}}
 {{/contextual-accordion}}
+
+<!-- {{#errors as |error|}}
+    <li>{{error}}</li>
+{{/errors}} -->

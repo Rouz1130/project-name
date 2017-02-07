@@ -179,7 +179,7 @@ body {
 
 // component accordion so far would not work to style in own pod folder
 
-$header-height: 102px;
+$header-height: 298px;
 $details-element-margin: 5px;
 $details-element-height: $header-height - (2 * $details-element-margin);
 
@@ -213,11 +213,12 @@ __product-info-container {
 }
 
 .header__image-container {
-    text-align: center;
+    text-align: left;
     margin: $details-element-margin;
     display: inline-block;
     width: $image-width;
     max-height: 51px;
+
 }
 .header__image-container--no-image{
     line-height: calc(#{$image-width} - (#{$details-element-margin} + 2px));
@@ -228,16 +229,16 @@ __product-info-container {
     overflow-y: hidden;
     display: inline-block;
     margin: $details-element-margin $details-element-margin $details-element-margin 0;
-    float: left;
+    float: center;
 }
 
 .details {
-  text-align:inherit;
-  font-family:monospace;
+  font-family: sans-serif;
+  // text-align:justify
 }
 
 .header {
-  text-align: center;
-  font-family: monospace;
-  font-size: 22px;
+
+  font-family: sans-serif;
+  font-size: 20px;
 }

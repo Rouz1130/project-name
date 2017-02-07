@@ -1,0 +1,12 @@
+{{#if isLoading}}
+    <h4 class="loading-feedback__message">
+        <span>
+            <svg class="loading-feedback__spinner" x="0px" y="0px" viewBox="0 0 150 150">
+                <circle class="loading-feedback__spinner--circle" cx="75" cy="75" r="55"/>
+            </svg>
+            {{message}}
+        </span>
+    </h4>
+{{else}}
+    {{yield}}
+{{/if}}
