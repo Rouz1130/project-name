@@ -2,8 +2,6 @@
 <br>
 {{product-card click=(action 'onclick') product=model}}
 <br>
-<br>
-<br>
 
 {{#contextual-accordion items=products as |item a|}}
 {{#a.header}}
@@ -16,21 +14,21 @@
 {{/a.details}}
 {{/contextual-accordion}}
 
-{{contextual-accordion}}
 
-
-
-
-<!-- {{#contextual-accordion items=products as |item a|}}
+{{#contextual-accordion items=implementation as |item a|}}
 {{#a.header}}
-{{item.name}}{{if a.isExpanded '' ''}}
+{{item.docuement}}{{if a.isExpanded '' ''}}
 {{/a.header}}
 {{#a.details}}
 <h4>
-  {{item.description}}
+  {{item.moreDoc}}
 </h4>
 {{/a.details}}
-{{/contextual-accordion}} -->
+{{/contextual-accordion}}
+
+
+
+
 
 
 

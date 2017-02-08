@@ -28,5 +28,16 @@ export default Ember.Controller.extend({
       description: "Templates and helpers and mustaches oh my."
 
     }
-  ]
+  ],
+// array for implementation-doc component
+  implementation: [
+     {
+      docuement: "Implementation",
+       moreDoc: "ow to use."
+     },
+     {
+       docuement: "Implementation",
+       moreDoc: "Foo how to use foo."
+     },
+   ]
 });
