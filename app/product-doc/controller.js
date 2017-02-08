@@ -6,7 +6,7 @@ export default Ember.Controller.extend({
       window.alert('cardWasClicked');
     }
   },
-  
+
   products: [
     {
       title: "Controller Actions",
