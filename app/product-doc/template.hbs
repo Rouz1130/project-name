@@ -1,18 +1,40 @@
 <br>
 <br>
 {{product-card click=(action 'onclick') product=model}}
+<br>
+<br>
+<br>
 
 {{#contextual-accordion items=products as |item a|}}
 {{#a.header}}
-{{item.title}}{{if a.isExpanded '' ''}}
+{{item.name}}{{if a.isExpanded '' ''}}
 {{/a.header}}
 {{#a.details}}
-<h4>By:{{item.author}}</h4>
 <h4>
-  {{item.text}}
+  {{item.description}}
 </h4>
 {{/a.details}}
 {{/contextual-accordion}}
+
+{{contextual-accordion}}
+
+
+
+
+<!-- {{#contextual-accordion items=products as |item a|}}
+{{#a.header}}
+{{item.name}}{{if a.isExpanded '' ''}}
+{{/a.header}}
+{{#a.details}}
+<h4>
+  {{item.description}}
+</h4>
+{{/a.details}}
+{{/contextual-accordion}} -->
+
+
+
+
 
 
 

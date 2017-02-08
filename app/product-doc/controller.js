@@ -9,24 +9,21 @@ export default Ember.Controller.extend({
 
   products: [
     {
-      title: "Controller Actions",
-      author: "Chris",
-      text: "Services, their whys, their hows."
+      name: "Controller Actions",
+      description: "Services, their whys, their hows."
     },
     {
-      title: "Controller Fields",
-      text: "Routing and routes and such.",
-      author: "Steve"
+      name: "Controller Fields",
+      description: "Routing and routes and such."
     },
     {
-      title: "Required Parameters",
-      text: "Templates and helpers and mustaches oh my.",
-      author: "Larry"
+      name: "Required Parameters",
+      description: "Templates and helpers and mustaches oh my."
     },
     {
-      title: "Optional Parameters",
-      text: "Templates and helpers and mustaches oh my.",
-      author: "Tyler"
+      name: "Optional Parameters",
+      description: "Templates and helpers and mustaches oh my."
+
     }
   ]
 });
