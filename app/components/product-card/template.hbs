@@ -1,5 +1,7 @@
 <div class="product-card__image-container">
+  <!--log helper: output variables or expressions rendering context on browser  -->
   {{log product}}
+  <!--eq is a truth-helper simply means if === to product.image being null  -->
     {{#if (eq product.image null)}}
         <span class="glyphicon glyphicon-picture product-card__image-container--no-image" aria-hidden="true"></span>
     {{else}}

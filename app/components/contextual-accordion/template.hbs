@@ -1,7 +1,13 @@
+<!-- class header and details makes card box -->
 <div class="header">
+  <!-- Iterate through array of items(for the moment resides in controller as products array) -->
 {{#each items as |listItem|}}
+  <!-- pass in accordion-item component, item and activeItem are the functions we perform when accordion is expanded -->
   {{#accordion-item item=listItem activeItem=activeItem as |isExpanded| }}
   <div class="details">
+    <!-- yield listitem: displays accordion -->
+    <!-- has isExpanded is is a computed function for activeItem and item which then returns the item activeItem which is = to item no null. -->
+    <!-- accordion-components header and details, click function and isExpanded function: toggleActiveItem is in accordion-item , isExpanded is in js of this contextual-accordion component -->
   {{yield listItem
           (hash isExpanded=isExpanded
                 header=(component 'accordion-header' click=(action "toggleActiveItem" listItem))

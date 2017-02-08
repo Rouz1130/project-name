@@ -1,12 +1,15 @@
 import Ember from 'ember';
-
+// all actions for are componets thus far
 export default Ember.Controller.extend({
+  // actions onclick is action of the click function in prodcut-card
   actions:{
     onclick() {
       window.alert('cardWasClicked');
     }
   },
 
+
+  // listItem arrary action to display product info on accordion component
   products: [
     {
       name: "Controller Actions",
